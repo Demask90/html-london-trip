@@ -10,9 +10,13 @@
     <!--inizio intestazione titolo e immagine iniziale -->
     <header>
         <h1>Il mio Viaggio a Londra</h1>
-        <img src="img/pexels-bill-emrich-230794-0.jpg" alt="Londra-left">
-        <img src="img/pexels-bill-emrich-230794-1.jpg" alt="Londra-center">
-        <img src="img/pexels-bill-emrich-230794-2.jpg" alt="Londra-right">
+        <div>
+            <!-- immagini con path relativo -->
+            <img src="img/pexels-bill-emrich-230794-0.jpg" alt="Londra-left">
+            <img src="img/pexels-bill-emrich-230794-1.jpg" alt="Londra-center">
+            <img src="img/pexels-bill-emrich-230794-2.jpg" alt="Londra-right">            
+            <!--fine immagini con path assoluti -->
+        </div>      
     </header>
     <!-- fine intestazione titolo e immagine iniziale -->
 
@@ -28,9 +32,11 @@
             <!-- inzio tabella spese -->
             <table>
                 <thead>
-                    <tr><strong>Numero </strong></tr>
-                    <tr><strong>Descrizione </strong></tr>
-                    <tr><strong>Costo </strong></tr>
+                    <tr>
+                        <th>Numero </th>
+                        <th>Descrizione </th>
+                        <th>Costo </th>
+                    </tr>    
                 </thead>
                 <tbody>
                     <tr>
@@ -48,11 +54,10 @@
                         <td>Biglietto Aereo</td>
                         <td>120€</td>
                     </tr>
-                </tbody>    S
+                </tbody>    
                 <tfoot>
                     <tr>
-                        <td>Totale</td>
-                        <td></td>
+                        <td colspan="2">Totale</td>
                         <td>360€</td>
                     </tr>
                 </tfoot>                             
@@ -83,22 +88,28 @@
 
             <!-- lista ordinata "info utili" -->
             <ol>
-                <li>Numeri utili di emergenza medica</li>
+                <li>
+                    Numeri utili di emergenza medica
                     <ul>
                         <li><strong>999</strong> - Emergenza</li>
                         <li><strong>101</strong> - Numero polizia</li>
                         <li><strong>111</strong> - Numero assistenza medica</li>
                     </ul>
-                <li>Hotel</li>
+                </li>    
+                <li>
+                    Hotel
                     <ul>
-                        <li><strong>Nome hotel:</strong> Buckingham Palace</li>
-                        <li><strong>Indirizzo hotel:</strong> Westminister, London SW1A 1AA, Regno Unito</li>
+                        <li><strong>Nome hotel</strong>: Buckingham Palace</li>
+                        <li><strong>Indirizzo hotel</strong>: Westminister, London SW1A 1AA, Regno Unito</li>
                     </ul>
-                <li>Aereo</li>
+                </li>    
+                <li>
+                    Aereo
                     <ul>
-                        <li><strong>Volo di Andata:</strong> Y1234X, ore 9.30 da Milano Malpensa</li>
-                        <li><strong>Volo di ritorno:</strong> Y1236X, ore 18.30 da London Heathrow</li>
-                    </ul>              
+                        <li><strong>Volo di Andata</strong>: Y1234X, ore 9.30 da Milano Malpensa</li>
+                        <li><strong>Volo di ritorno</strong>: Y1236X, ore 18.30 da London Heathrow</li>
+                    </ul>
+                </li>                  
             </ol>  
             <!-- fine lista ordinata "info utili" -->
 
@@ -110,8 +121,12 @@
         <!-- inizio "Le foto" -->
         <section>
             <h3>Le foto</h3>
-            <img src="img/millennium-bridge.jpg" alt="">
-            <img src="img/borough-market-london.jpg" alt="">
+            <div>
+                <!-- immagini con path assoluti -->
+                <img src="https://www.abta.com/sites/default/files/styles/large/public/media/uploads/london-400x400-compressor_0.jpg" alt="millennium-bridge">
+                <img src="https://pokerstarscareers.com/wp-content/uploads/2020/01/London-Wider-Area-e1597319992670-400x400.jpg" alt="borough-market-london">
+                <!--fine immagini con path assoluti -->
+            </div>
         </section>
         <!-- fine "Le foto" -->
 
